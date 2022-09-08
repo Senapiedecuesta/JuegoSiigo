@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="/Img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/login.css">
+
+    <title> SIIGO MATCH BATTLE</title>
+  </head>
+  <body>
+    <div class="card" id="login">
+        <div class="card-header">
+          SIIGO MATCH BATTLE
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre del jugador</label>
+                  <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <br>
+                  
+                 <!-- modal -->
+                 <button type="button"  class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                    Descripcion del juego
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                           <h2 class="modal-title" id="staticBackdropLabel">Descripción del juego</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="Titulo-modal">Descripción</h4>
+                            <p class="texto-modal"> Es un juego para dos jugadores, basado en la suerte y probabilidad de los participante
+                                en lograr dejar a su oponente sin cartas. </p>
+                                <button class="btn btn-success" type="submit"></button><p>Maquina</p>
+                                <button class="btn btn-dark" type="submit"></button><p>jugador 1</p>
+                              
+                                <br>
+                                <h4 class="Titulo-modal">Modo De Juego</h4>
+                                <p class="texto-modal"> 1) La partida cuenta con dos jugadores. <br>
+                                2) Cada jugador inicia la partida con un mazo de 16 cartas <br>
+                            3) El numeró superior reflejado en la carta obtiene la victoria. <br>
+                        4) Cuando se enfrentan dos cartas con el mismo valor, el sistema toma el encuentro como empate. <br>
+                    5) Gana el jugador que logre dejar al otro jugador con 0 cartas.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 <!-- fin modal-->
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Entendiste las reglas del juego</label>
+                </div>
+                <a href="/index.html" onclick="alert('Bienvenido jugador');" class="btn btn-primary">Iniciar</a>
+                
+              </form>
+        </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
